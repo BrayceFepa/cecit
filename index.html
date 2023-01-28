@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CAYSTI COURSES</title>
+
+    <!-- custom css link path -->
+    <link rel="stylesheet" href="css/styles.css">
+
+    <!-- fontawesome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- swiperjs css cdn link -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+</head>
+<body>
+
+    <!-- header section starts -->
+    <header class="header">
+        
+            <a href="admin.php" class="logo"><img src="./images/LogoCAYSTI1.png" alt=""></a>
+        
+
+        <div class="swiper hader-slider">
+            <div class="swiper-wrapper">
+                
+        </div>
+    </header>
+    <!-- header section ends -->
+
+
+    <!-- main section starts -->
+    <main class="main">
+
+        
+        <!-- program starts -->
+
+        <section class="programs">
+            <h2 class="heading">nos programmmes de formation</h2>
+
+            <div class="program-wrapper">
+                
+                <div class="program">
+                    <div class="fa fa-gear"></div>
+                    <h4>pour les enfants de CM1 à 3ème</h4>
+                    <p>
+                        Codage Python et entrepreneuriat; robotique; créativité numérique; déssin/écriture; secourisme; bricolage; découvrir un métier
+                    </p>
+                </div>
+
+                <div class="program">
+                    <div class="fa fa-code"></div>
+                    <h4>Pour les enfants de 3ème en Terminal</h4>
+                    <p>
+                        programmation avancée en python
+                    </p>
+                </div>
+
+                <div class="program">
+                    <div class="fa fa-clipboard"></div>
+                    <h4>inscription : 5000 fcfa</h4>
+                    <h4>frais des cours : 60000 fcfa</h4>
+                    <p>Pour les enfant ayant des laptops, bien vouloir venir avec</p>
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- program ends -->
+        
+
+        <!-- registration form starts -->
+        
+        <section class="form">
+            
+            
+            <h2 class="heading">Inscrivez-vous</h2>
+            
+            <div class="messages">
+                Enregistrement éffectué avec succès !
+            </div>
+            <div class="error-text">
+                
+            </div>
+
+            <div class="blur primary"></div>
+            <div class="blur secondary"></div>
+
+
+            <form action="" class="form-container">
+                <div class="names-box">
+                    <input type="text" name="fname" id="fname" placeholder="votre nom"/>
+                    <input type="text" name="lname" id="lname" placeholder="Votre prénom"/>
+                </div>
+                <div class="input-box">
+                    <input type="email" name="email" id="email" placeholder="Votre addresse email " />
+                </div>
+                <div class="input-box">
+                    <input type="date" name="bdate" id="bdate" placeholder="Votre date de Naissance">
+                </div>
+
+                <h3>Choisissez votre session</h3>
+
+                <div class="sessions-group">
+
+                    <input type="radio" name="session" id="offline" value="offline" placeholder="en présentielle"/>
+                    <input type="radio" name="session" id="online" value="online" placeholder="Session en ligne" />
+                    
+                    <div class="session">
+                        <label for="offline">
+                            <div class="radio offline" id="radio-1"></div>
+                        </label>
+                            <div class="desc">
+                                <span>En présentielle (de juin à juillet.)</span>
+                            </div>
+                    </div>
+
+                    <div class="session">
+                        <label for="online">
+                            <div class="radio online" id="radio-2"></div>
+                        </label>
+                            <div class="desc">
+                                <span>en ligne (de juin à août.)</span>
+                            </div>
+                    </div>
+
+                </div>
+
+                <input type="submit" value="Envoyer" name="submit" class="submit-btn">
+
+            </form>
+
+        </section>
+
+        <!-- registration form ends -->
+
+    </main>
+    <!-- main section ends -->
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>

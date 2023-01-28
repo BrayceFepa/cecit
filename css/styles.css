@@ -1,0 +1,281 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap");
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  outline: none;
+  border: none;
+  font-family: "Montserrat", sans-serif;
+}
+
+section {
+  padding: 3rem 7%;
+}
+
+.heading {
+  color: #cc3300;
+  font-size: 3rem;
+  text-align: center;
+  font-weight: bolder;
+  text-transform: uppercase;
+}
+.heading span {
+  color: #eaad15;
+}
+
+.header {
+  position: relative;
+}
+.header .logo {
+  height: 10rem;
+  width: 10rem;
+  position: absolute;
+  z-index: 2;
+  top: 2rem;
+  left: 5rem;
+  background: #fff;
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.header .logo img {
+  height: 70%;
+}
+.header .hader-slider .features-slide {
+  height: 38rem;
+  width: 100vw;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  padding: 2rem 4%;
+}
+.header .hader-slider .features-slide .text {
+  margin-top: 10%;
+  font-weight: bold;
+  color: #fff;
+  width: 45%;
+  font-size: 3rem;
+  line-height: 1.5;
+  text-shadow: 0.3rem 0.5rem 1rem rgba(77, 77, 77, 0.5);
+}
+
+.programs {
+  margin-top: 5rem;
+  margin-bottom: 2rem;
+}
+.programs .heading {
+  margin-bottom: 5rem;
+}
+.programs .program-wrapper {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  gap: 2rem;
+}
+.programs .program-wrapper .program {
+  padding: 2rem;
+  text-align: center;
+  display: flex;
+  flex-flow: column;
+  gap: 1rem;
+  cursor: pointer;
+  box-shadow: 0.2rem 0.3rem 1.2rem rgba(0, 0, 0, 0.2);
+  border-radius: 1rem;
+}
+.programs .program-wrapper .program .fa {
+  font-size: 2.5rem;
+  height: 6rem;
+  width: 6rem;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  margin: 0 auto;
+}
+.programs .program-wrapper .program h4 {
+  font-size: 1.7rem;
+  margin: 1rem 0;
+}
+.programs .program-wrapper .program p {
+  font-size: 1.3rem;
+}
+.programs .program-wrapper .program:nth-of-type(1) h4 {
+  color: #cc3300;
+}
+.programs .program-wrapper .program:nth-of-type(1) .fa {
+  background: #cc3300;
+  color: #fff;
+}
+.programs .program-wrapper .program:nth-of-type(2) h4 {
+  color: #eaad15;
+}
+.programs .program-wrapper .program:nth-of-type(2) .fa {
+  background: #eaad15;
+  color: #fff;
+}
+.programs .program-wrapper .program:nth-of-type(3) h4 {
+  color: #cc3300;
+  margin: 0;
+}
+.programs .program-wrapper .program:nth-of-type(3) .fa {
+  background: #cc3300;
+  color: #fff;
+}
+
+.form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column;
+  position: relative;
+}
+.form .messages {
+  background: rgb(132, 255, 116);
+  border: 0.3rem solid #22f422;
+  border-radius: 0.4rem;
+  color: #029b02;
+  font-size: 1.3rem;
+  font-weight: bold;
+  padding: 1rem;
+  text-align: center;
+  width: 40rem;
+  margin-bottom: 2rem;
+  display: none;
+}
+.form .error-text {
+  background: rgb(255, 112, 112);
+  border: 0.1rem solid #f42222;
+  border-radius: 0.4rem;
+  color: #800000;
+  font-size: 1.3rem;
+  font-weight: bold;
+  padding: 1rem;
+  text-align: center;
+  width: 40rem;
+  margin-bottom: 2rem;
+  display: none;
+  transition: all 0.5s linear;
+}
+.form .blur {
+  z-index: -2;
+  position: absolute;
+  height: 60rem;
+  width: 60rem;
+  border-radius: 100%;
+  filter: blur(72px);
+  opacity: 0.1;
+}
+.form .primary {
+  background: #eaad15;
+  right: 0;
+  top: 0;
+}
+.form .secondary {
+  background: #cc3300;
+  left: 0;
+  bottom: -10rem;
+  opacity: 0.1;
+}
+.form .heading {
+  margin: 3rem 0;
+}
+.form .form-container {
+  width: 65rem;
+  height: 80vh;
+  background: linear-gradient(135deg, #cc3300, #eaad15);
+  border-radius: 2rem;
+  padding: 3rem 2rem;
+  display: flex;
+  align-items: center;
+  flex-flow: column;
+  justify-content: center;
+  gap: 3rem;
+}
+.form .form-container .names-box {
+  height: 5rem;
+  width: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  margin: 0 auto;
+}
+.form .form-container .names-box input {
+  height: 100%;
+  flex: 1;
+  padding: 1rem;
+  border-radius: 0.5rem;
+}
+.form .form-container .input-box {
+  width: 90%;
+  height: 5rem;
+}
+.form .form-container .input-box input {
+  width: 100%;
+  height: 100%;
+  padding: 1rem;
+  border-radius: 0.5rem;
+}
+.form .form-container h3 {
+  color: #fff;
+  font-size: 2rem;
+  margin-top: 1rem;
+}
+.form .form-container .sessions-group {
+  display: flex;
+  width: 90%;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+}
+.form .form-container .sessions-group input[type=radio] {
+  display: none;
+}
+.form .form-container .sessions-group #offline:checked ~ .session label .offline {
+  background: radial-gradient(#fc5c5c, #cc3300);
+}
+.form .form-container .sessions-group #online:checked ~ .session label .online {
+  background: radial-gradient(#fc5c5c, #cc3300);
+}
+.form .form-container .sessions-group .session {
+  display: flex;
+  align-items: center;
+  height: 5rem;
+  background: #fff;
+  border-radius: 0.6rem;
+  flex: 1;
+  gap: 1rem;
+  padding: 0 1rem;
+  padding-right: 0;
+}
+.form .form-container .sessions-group .session .radio {
+  height: 2.3rem;
+  width: 2.3rem;
+  background: #fff;
+  border-radius: 100%;
+  cursor: pointer;
+  margin-right: 0.3rem;
+  border: 0.3rem solid #eaad15;
+}
+.form .form-container .sessions-group .session .desc {
+  font-size: 1rem;
+  color: #cc3300;
+  font-weight: bold;
+}
+.form .form-container .submit-btn {
+  width: 90%;
+  height: 5rem;
+  cursor: pointer;
+  border-radius: 1rem;
+  background: #fff;
+  font-size: 1.7rem;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #cc3300;
+}/*# sourceMappingURL=styles.css.map */
