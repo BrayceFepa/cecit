@@ -101,7 +101,7 @@ if (isset($_GET['id'])) {
         e.preventDefault();
 
         let xhr = new XMLHttpRequest();
-        xhr.open("POST", "http://localhost/dev/Monsieur_LOIC/php/edit.php", true);
+        xhr.open("POST", "http://caysticourses.great-site.net/php/edit.php", true);
         xhr.onload = () => {
             let data = xhr.response;
             console.log(data)

@@ -63,7 +63,11 @@ submitBtn.onclick = () => {
   // let's start ajax
   let xhr = new XMLHttpRequest(); //creating XML object
 
-  xhr.open("post", "http://localhost/dev/Monsieur_LOIC/php/register.php", true);
+  xhr.open(
+    "post",
+    "http://caysticourses.great-site.net/php/register.php",
+    true
+  );
 
   xhr.onload = () => {
     let data = xhr.response;

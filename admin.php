@@ -1,7 +1,7 @@
 <?php
 session_start();
 if (!isset($_SESSION)) {
-    header("location:./index.html");
+    header("location:http://caysticourses.great-site.net/index.html");
 }
 
 require_once "./php/config.php";
