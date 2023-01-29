@@ -32,6 +32,7 @@ const form = document.querySelector(".form form"),
   messages = document.querySelector(".form .messages"),
   errorText = document.querySelector(".form .error-text"),
   continueBtns = document.querySelectorAll(".continue-btn"),
+  backBtns = document.querySelectorAll(".back-btn"),
   forms1 = document.querySelectorAll(".form-1");
 
 continueBtns.forEach((btn, id) => {
@@ -39,8 +40,18 @@ continueBtns.forEach((btn, id) => {
     e.preventDefault();
     console.log(btn, `id = ${id}`);
     forms1[id].style.display = "none";
-    // forms1[id + 1].style.display = "flex";
+    forms1[id + 1].style.display = "flex";
     forms1[id + 1].style.left = 0;
+  };
+});
+
+backBtns.forEach((btn, id) => {
+  btn.onclick = (e) => {
+    e.preventDefault();
+    console.log(btn, `id = ${id}`);
+    forms1[id + 1].style.display = "none";
+    forms1[id].style.display = "flex";
+    forms1[id].style.left = 0;
   };
 });
 

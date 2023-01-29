@@ -383,6 +383,7 @@ section {
   border-radius: 0.5rem;
   cursor: pointer;
   margin-top: 1.6rem;
+  font-size: 1.5rem;
 }
 .form .form-container .forms .form-1 .input-box select option {
   font-size: 1.5rem;
@@ -464,8 +465,30 @@ section {
   color: #cc3300;
   font-weight: bold;
 }
-.form .form-container .forms .form-1 .continue-btn {
+.form .form-container .forms .form-1 .grp-btn {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   width: 90%;
+  gap: 2rem;
+}
+.form .form-container .forms .form-1 .grp-btn .continue-btn {
+  flex: 1;
+  height: 5rem;
+  cursor: pointer;
+  border-radius: 1rem;
+  background: #fff;
+  font-size: 1.7rem;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #cc3300;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+.form .form-container .forms .form-1 .grp-btn .back-btn {
+  flex: 1;
   height: 5rem;
   cursor: pointer;
   border-radius: 1rem;
