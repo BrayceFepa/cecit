@@ -14,6 +14,10 @@ html {
   font-family: "Montserrat", sans-serif;
 }
 
+body {
+  background: rgb(250, 250, 250);
+}
+
 section {
   padding: 3rem 7%;
 }
@@ -29,8 +33,26 @@ section {
   color: #eaad15;
 }
 
+.btn {
+  border: 0.1rem solid #fff;
+  border-radius: 0.5rem;
+  color: #fff;
+  padding: 1rem 1.5rem;
+  font-size: 1.6rem;
+}
+
 .header {
   position: relative;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../images/bg-header.jpg);
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 3rem 7%;
+  text-align: center;
 }
 .header .logo {
   height: 10rem;
@@ -49,47 +71,163 @@ section {
 .header .logo img {
   height: 70%;
 }
-.header .hader-slider .features-slide {
-  height: 38rem;
-  width: 100vw;
-  background-position: center;
-  background-size: contain;
-  background-repeat: no-repeat;
-  padding: 2rem 4%;
+.header .header__content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 1rem;
+  padding-top: 9rem;
 }
-.header .hader-slider .features-slide .text {
-  margin-top: 10%;
-  font-weight: bold;
+.header .header__content h2 {
+  font-size: 7rem;
+  color: #eaad15;
+}
+.header .header__content h3 {
+  font-size: 5rem;
   color: #fff;
-  width: 45%;
-  font-size: 3rem;
+  margin-bottom: 1.5rem;
+}
+.header .header__content p {
+  font-size: 1.4rem;
+  color: #fff;
+  width: 75%;
+  margin: 0 auto;
   line-height: 1.5;
-  text-shadow: 0.3rem 0.5rem 1rem rgba(77, 77, 77, 0.5);
+  font-weight: 500;
+  margin-bottom: 1.5rem;
+}
+.header .header__content .btn {
+  background-image: linear-gradient(135deg, #cc3300, #eaad15);
+  border: none;
+  font-size: 1.7rem;
+  text-transform: uppercase;
+  font-weight: 500;
 }
 
 .programs {
   margin-top: 5rem;
   margin-bottom: 2rem;
+  padding-top: 10rem;
 }
-.programs .heading {
-  margin-bottom: 5rem;
+.programs .program-intro {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 3.5rem;
 }
-.programs .program-wrapper {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
-  gap: 2rem;
+.programs .program-intro div {
+  flex: 1;
 }
-.programs .program-wrapper .program {
+.programs .program-intro .pic {
+  height: 40rem;
+  overflow: hidden;
+  border-radius: 1rem;
+}
+.programs .program-intro .pic img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.programs .program-intro .txt .heading {
+  margin-bottom: 1rem;
+  font-size: 2.3rem;
+  text-align: left;
+  margin: 0;
+}
+.programs .program-intro .txt .desc {
+  font-size: 2rem;
+  color: #777;
+  text-align: left;
+  margin: 0;
+  margin-top: 1.5rem;
+}
+.programs .programs-section {
+  margin-top: 10rem;
+}
+.programs .programs-section .heading {
+  font-size: 4rem;
+  margin-bottom: 3rem;
+}
+.programs .programs-section .formation {
+  margin: 5rem 0;
+  margin-bottom: 10rem;
+}
+.programs .programs-section .formation .modules {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  color: #fff;
+  font-weight: 500;
+}
+.programs .programs-section .formation .modules li {
+  flex-basis: 18%;
+  background-image: linear-gradient(120deg, #cc3300, #eaad15);
+  list-style: none;
+  padding: 2rem 0.6rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  font-size: 1.2rem;
+}
+.programs .programs-section .formation .modules li i {
+  font-size: 1.6rem;
+}
+.programs .programs-section .programs-container {
+  margin-top: 5rem;
+}
+.programs .programs-section .programs-container .title-program {
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 2rem;
+  color: #cc3300;
+}
+.programs .programs-section .programs-container .program-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 5rem;
+  flex-wrap: wrap;
+  position: relative;
+}
+.programs .programs-section .programs-container .program-wrapper .program {
   padding: 2rem;
   text-align: center;
   display: flex;
   flex-flow: column;
-  gap: 1rem;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
   cursor: pointer;
-  box-shadow: 0.2rem 0.3rem 1.2rem rgba(0, 0, 0, 0.2);
   border-radius: 1rem;
+  background: #fff;
+  flex: 1;
+  border: 0.1rem solid #eaad15;
+  height: 30rem;
+  overflow: hidden;
 }
-.programs .program-wrapper .program .fa {
+.programs .programs-section .programs-container .program-wrapper .program img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.programs .programs-section .programs-container .program-wrapper .program .title {
+  font-weight: 600;
+  color: #cc3300;
+  font-size: 2rem;
+  text-transform: uppercase;
+}
+.programs .programs-section .programs-container .program-wrapper .program span {
+  font-size: 1.3rem;
+  color: #333;
+}
+.programs .programs-section .programs-container .program-wrapper .program .step {
   font-size: 2.5rem;
   height: 6rem;
   width: 6rem;
@@ -97,35 +235,37 @@ section {
   place-items: center;
   border-radius: 50%;
   margin: 0 auto;
+  background: #cc3300;
+  color: #fff;
+  font-weight: bold;
 }
-.programs .program-wrapper .program h4 {
+.programs .programs-section .programs-container .program-wrapper .program h4 {
   font-size: 1.7rem;
   margin: 1rem 0;
 }
-.programs .program-wrapper .program p {
+.programs .programs-section .programs-container .program-wrapper .program p {
   font-size: 1.3rem;
 }
-.programs .program-wrapper .program:nth-of-type(1) h4 {
-  color: #cc3300;
+.programs .programs-section .programs-container .program-wrapper .program:hover {
+  background-color: #cc3300;
+  transition: all 0.3s linear;
 }
-.programs .program-wrapper .program:nth-of-type(1) .fa {
-  background: #cc3300;
-  color: #fff;
-}
-.programs .program-wrapper .program:nth-of-type(2) h4 {
-  color: #eaad15;
-}
-.programs .program-wrapper .program:nth-of-type(2) .fa {
+.programs .programs-section .programs-container .program-wrapper .program:hover .step {
   background: #eaad15;
+}
+.programs .programs-section .programs-container .program-wrapper .program:hover .title {
   color: #fff;
 }
-.programs .program-wrapper .program:nth-of-type(3) h4 {
-  color: #cc3300;
-  margin: 0;
+.programs .programs-section .programs-container .program-wrapper .program:hover span {
+  color: #fff;
 }
-.programs .program-wrapper .program:nth-of-type(3) .fa {
+.programs .programs-section .programs-container .program-wrapper::after {
+  content: "";
+  position: absolute;
   background: #cc3300;
-  color: #fff;
+  width: 100%;
+  height: 0.5rem;
+  z-index: -1;
 }
 
 .form {
@@ -162,42 +302,37 @@ section {
   display: none;
   transition: all 0.5s linear;
 }
-.form .blur {
-  z-index: -2;
-  position: absolute;
-  height: 60rem;
-  width: 60rem;
-  border-radius: 100%;
-  filter: blur(72px);
-  opacity: 0.1;
-}
-.form .primary {
-  background: #eaad15;
-  right: 0;
-  top: 0;
-}
-.form .secondary {
-  background: #cc3300;
-  left: 0;
-  bottom: -10rem;
-  opacity: 0.1;
-}
 .form .heading {
   margin: 3rem 0;
 }
 .form .form-container {
-  width: 65rem;
-  height: 80vh;
+  position: relative;
+  width: 95vw;
+}
+.form .form-container .forms {
+  width: 55%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: absolute;
+  margin-top: 20rem;
+  left: 50%;
+  right: 50%;
+  transform: translateX(-50%);
+}
+.form .form-container .forms .form-1 {
   background: linear-gradient(135deg, #cc3300, #eaad15);
   border-radius: 2rem;
   padding: 3rem 2rem;
+  width: 100%;
   display: flex;
   align-items: center;
   flex-flow: column;
   justify-content: center;
-  gap: 3rem;
+  gap: 2rem;
+  position: absolute;
 }
-.form .form-container .names-box {
+.form .form-container .forms .form-1 .names-box {
   height: 5rem;
   width: 90%;
   display: flex;
@@ -206,46 +341,91 @@ section {
   gap: 1rem;
   margin: 0 auto;
 }
-.form .form-container .names-box input {
+.form .form-container .forms .form-1 .names-box input {
   height: 100%;
   flex: 1;
   padding: 1rem;
   border-radius: 0.5rem;
 }
-.form .form-container .input-box {
+.form .form-container .forms .form-1 .input-box {
   width: 90%;
   height: 5rem;
 }
-.form .form-container .input-box input {
+.form .form-container .forms .form-1 .input-box label {
+  font-size: 1.6rem;
+}
+.form .form-container .forms .form-1 .input-box input {
   width: 100%;
   height: 100%;
   padding: 1rem;
   border-radius: 0.5rem;
 }
-.form .form-container h3 {
+.form .form-container .forms .form-1 .input-box select {
+  width: 100%;
+  height: 100%;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  margin-top: 1.6rem;
+}
+.form .form-container .forms .form-1 .input-box select option {
+  font-size: 1.5rem;
+}
+.form .form-container .forms .form-1 h3 {
   color: #fff;
   font-size: 2rem;
-  margin-top: 1rem;
+  margin-top: 1em;
 }
-.form .form-container .sessions-group {
+.form .form-container .forms .form-1 .sessions-group {
   display: flex;
   width: 90%;
   justify-content: space-between;
   align-items: center;
   gap: 1rem;
 }
-.form .form-container .sessions-group input[type=radio] {
+.form .form-container .forms .form-1 .sessions-group input[type=radio] {
   display: none;
 }
-.form .form-container .sessions-group #offline:checked ~ .session label .offline {
+.form .form-container .forms .form-1 .sessions-group #offline:checked ~ .session label .offline {
   background: radial-gradient(#fc5c5c, #cc3300);
 }
-.form .form-container .sessions-group #online:checked ~ .session label .online {
+.form .form-container .forms .form-1 .sessions-group #online:checked ~ .session label .online {
   background: radial-gradient(#fc5c5c, #cc3300);
 }
-.form .form-container .sessions-group .session {
+.form .form-container .forms .form-1 .sessions-group #homme:checked ~ .session label .offline {
+  background: radial-gradient(#fc5c5c, #cc3300);
+}
+.form .form-container .forms .form-1 .sessions-group #femme:checked ~ .session label .online {
+  background: radial-gradient(#fc5c5c, #cc3300);
+}
+.form .form-container .forms .form-1 .sessions-group #french:checked ~ .session label .offline {
+  background: radial-gradient(#fc5c5c, #cc3300);
+}
+.form .form-container .forms .form-1 .sessions-group #english:checked ~ .session label .online {
+  background: radial-gradient(#fc5c5c, #cc3300);
+}
+.form .form-container .forms .form-1 .sessions-group #has_ordi:checked ~ .session label .offline {
+  background: radial-gradient(#fc5c5c, #cc3300);
+}
+.form .form-container .forms .form-1 .sessions-group #hasnt_ordi:checked ~ .session label .online {
+  background: radial-gradient(#fc5c5c, #cc3300);
+}
+.form .form-container .forms .form-1 .sessions-group #tranche-1:checked ~ .session label .offline {
+  background: radial-gradient(#fc5c5c, #cc3300);
+}
+.form .form-container .forms .form-1 .sessions-group #tranche-2:checked ~ .session label .online {
+  background: radial-gradient(#fc5c5c, #cc3300);
+}
+.form .form-container .forms .form-1 .sessions-group #yde-1:checked ~ .session label .offline {
+  background: radial-gradient(#fc5c5c, #cc3300);
+}
+.form .form-container .forms .form-1 .sessions-group #yde-2:checked ~ .session label .online {
+  background: radial-gradient(#fc5c5c, #cc3300);
+}
+.form .form-container .forms .form-1 .sessions-group .session {
   display: flex;
   align-items: center;
+  justify-content: center;
   height: 5rem;
   background: #fff;
   border-radius: 0.6rem;
@@ -254,7 +434,7 @@ section {
   padding: 0 1rem;
   padding-right: 0;
 }
-.form .form-container .sessions-group .session .radio {
+.form .form-container .forms .form-1 .sessions-group .session .radio {
   height: 2.3rem;
   width: 2.3rem;
   background: #fff;
@@ -263,10 +443,41 @@ section {
   margin-right: 0.3rem;
   border: 0.3rem solid #eaad15;
 }
-.form .form-container .sessions-group .session .desc {
-  font-size: 1rem;
+.form .form-container .forms .form-1 .sessions-group .session .desc {
+  font-size: 1.5rem;
   color: #cc3300;
   font-weight: bold;
+}
+.form .form-container .forms .form-1 .continue-btn {
+  width: 90%;
+  height: 5rem;
+  cursor: pointer;
+  border-radius: 1rem;
+  background: #fff;
+  font-size: 1.7rem;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #cc3300;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+.form .form-container .forms .form-1:nth-child(2) {
+  left: 150%;
+  transition: all 0.3s linear;
+}
+.form .form-container .forms .form-1:nth-child(3) {
+  left: 150%;
+  transition: all 0.3s linear;
+}
+.form .form-container .forms .form-1:nth-child(4) {
+  left: 150%;
+  transition: all 0.3s linear;
+}
+.form .form-container .forms .form-1:nth-child(5) {
+  left: 150%;
+  transition: all 0.3s linear;
 }
 .form .form-container .submit-btn {
   width: 90%;

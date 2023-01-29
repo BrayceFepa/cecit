@@ -6,8 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CAYSTI COURSES</title>
 
-    <!-- custom css link path -->
-    <link rel="stylesheet" href="css/styles.css">
+   
 
     <!-- fontawesome cdn -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
@@ -16,6 +15,13 @@
 
     <!-- swiperjs css cdn link -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+
+    <!-- bootstrap cdn -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+
+        <!-- custom css link path -->
+        <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
 
@@ -25,9 +31,12 @@
             <a href="admin.php" class="logo"><img src="./images/LogoCAYSTI1.png" alt=""></a>
         
 
-        <div class="swiper hader-slider">
-            <div class="swiper-wrapper">
-                
+        <div class="header__content">
+            <h2>CECIT</h2>
+            <h3>Camp, Entrepreneuriat, Créativité, Innovation, Tech</h3>
+            <p>Le monde évolue, la technologie suit le cours du vent. Nous voici en 2023 en plein dans l’ère de la révolution numérique et, de nos jours, il est donc clair que contrairement à l’époque de nos parents, l’analphabétisme ne désigne non plus l‘attitude de ne pouvoir ni lire ni écrire mais de ne pas savoir programmer pire utiliser l’outil informatique. Apprendre à programmer devient donc une tâche capitale et un élément essentiel dont tout enfant doit se munir.</p>
+
+            <a href="" class="btn">Continuer <i class="fa fa-arrow-down"></i></a>
         </div>
     </header>
     <!-- header section ends -->
@@ -40,33 +49,107 @@
         <!-- program starts -->
 
         <section class="programs">
-            <h2 class="heading">nos programmmes de formation</h2>
 
-            <div class="program-wrapper">
+            <div class="program-intro">
+                <div class="pic">
+                    <img src="images/youngs.jpeg" alt="">
+                </div>
+                <div class="txt">
+                    <h2 class="heading">Bienvenue dans votre centre d’éveil technologique, de développement de la créativité et de promotion
+                        de
+                        l’entrepreneuriat des jeunes via le numérique.</h2>
+                    <p class="desc">C’est avec un immense plaisir que nous vous annonçons le début de la formation de vos enfants qui aura
+                        lieu à Yaoundé/
+                        Carrefour Bastos dès le mois de juin. Dans un environnement convivial et dans le respect stricte des mesures
+                        d’hygiène. Vos enfants auront des activités
+                        créatives, technologiques et ludiques</p>
+                </div>
+            </div>
+
+            <div class="programs-section">
+
+                <div class="formation">
+                    <h3 class="heading">Modules de formation du CECIT</h3>
+                    <ul class="modules">
+                        <li><i class="fa fa-code"></i> Abc Code</li>
+                        <li><i class="fa-brands fa-android"></i> Robotique</li>
+                        <li><i class="fa-solid fa-sack-dollar"></i> Éducation Financière</li>
+                        <li><i class="fa-solid fa-computer"></i> Créativité Numérique</li>
+                        <li><i class="fa fa-music"></i> Chant</li>
+                    </ul>
+                </div>
+
+                <h2 class="heading">PROGRAMME</h2>
+
+
+                <div class="programs-container">
+                    <h3 class="title-program">CAMEROUN - YAOUNDE</h3>
+                    <ul class="program-wrapper">
+                        <li class="program">
+                            <div class="step">1</div>
+                            <span class="title">Particuliers de yaoundé CECIT</span>
+                            <span>Centre de formation : CAYSTI</span>
+                            <span>Durée : 1 mois </span>
+                            <span>Première Vague du 12 juin au 8 juillet 2023 </span>
+                            <span>Deuxieme Vague du 17 juillet au 12 Aout 2023 </span>
+                            
+                        </li>
+                        
+                        <li class="program">
+                            <div class="step">2</div>
+                            <span class="title">les écoles</span>
+                            <span>formation des formateurs dans les écoles en Mars (3jours)</span>
+                            <span>Formation des formateurs hors du centre ou de la diapora : Mars (3jours) </span>
+                            <span>CECIT 1 mois </span>
+                            <span>Première Vague du 12 juin au 8 juillet 2023 </span>
+                            <span>Deuxieme Vague du 17 juillet au 12 Aout 2023 </span>
+                           
+                        </li>
+                        
+                    </ul>
+                </div>
+
+                <div class="programs-container">
+                    <h3 class="title-program">LA DIASPORA</h3>
+                    <ul class="program-wrapper">
+                        <li class="program">
+                            <div class="step">1</div>
+                            <span>Première vague : mois de juin</span>
+                            <span>Deuxieme vague : mois de juillet</span>
+                            <span>Troisieme vague : mois d'Aout </span>
+                            <span>Première Vague du 12 juin au 8 juillet 2023 </span>
+                            <span>Deuxieme Vague du 17 juillet au 12 Aout 2023 </span>
                 
-                <div class="program">
-                    <div class="fa fa-gear"></div>
-                    <h4>pour les enfants de CM1 à 3ème</h4>
-                    <p>
-                        Codage Python et entrepreneuriat; robotique; créativité numérique; déssin/écriture; secourisme; bricolage; découvrir un métier
-                    </p>
-                </div>
+                        </li>
 
-                <div class="program">
-                    <div class="fa fa-code"></div>
-                    <h4>Pour les enfants de 3ème en Terminal</h4>
-                    <p>
-                        programmation avancée en python
-                    </p>
+                        <li class="program">
+                            <img src="images/diaspora.jpg" alt="">
+                        
+                        </li>
+                
+                    </ul>
                 </div>
+                
+                <div class="programs-container">
+                    <h3 class="title-program">formation en ligne</h3>
+                    <ul class="program-wrapper">
 
-                <div class="program">
-                    <div class="fa fa-clipboard"></div>
-                    <h4>inscription : 5000 fcfa</h4>
-                    <h4>frais des cours : 60000 fcfa</h4>
-                    <p>Pour les enfant ayant des laptops, bien vouloir venir avec</p>
+                        <li class="program">
+                            <img src="images/enligne.jpg" alt="">
+                        </li>
+
+                        <li class="program">
+                            <div class="step">1</div>
+                            <span>1 mois reparti comme suit :</span>
+                            <span>3 semaines de cours sur la plateforme MyCaysti dont 6 jours de cours en vidéoconférence</span>
+                            <span>1 semaine pour envoyer les resultats  </span>
+                            <span>2 jours d'évaluations des différents projets et 1 jour pour les resultats </span>
+                            <span>Deuxieme Vague du 17 juillet au 12 Aout 2023 </span>
+                
+                        </li>
+                
+                    </ul>
                 </div>
-
             </div>
 
         </section>
@@ -88,50 +171,257 @@
                 
             </div>
 
-            <div class="blur primary"></div>
-            <div class="blur secondary"></div>
-
 
             <form action="" class="form-container">
-                <div class="names-box">
-                    <input type="text" name="fname" id="fname" placeholder="votre nom"/>
-                    <input type="text" name="lname" id="lname" placeholder="Votre prénom"/>
-                </div>
-                <div class="input-box">
-                    <input type="email" name="email" id="email" placeholder="Votre addresse email " />
-                </div>
-                <div class="input-box">
-                    <input type="date" name="bdate" id="bdate" placeholder="Votre date de Naissance">
-                </div>
 
-                <h3>Choisissez votre session</h3>
-
-                <div class="sessions-group">
-
-                    <input type="radio" name="session" id="offline" value="offline" placeholder="en présentielle"/>
-                    <input type="radio" name="session" id="online" value="online" placeholder="Session en ligne" />
+                <div class="forms">
+                    <div class="form-1">
+                        <div class="input-box">
+                            <input type="text" name="tel" id="tel" placeholder="Numéro de téléphone">
+                        </div>
                     
-                    <div class="session">
-                        <label for="offline">
-                            <div class="radio offline" id="radio-1"></div>
-                        </label>
-                            <div class="desc">
-                                <span>En présentielle (de juin à juillet.)</span>
+                        <div class="input-box">
+                            <input type="email" name="email" id="email" placeholder="Votre addresse email " />
+                        </div>
+                    
+                    
+                        <h3>Etes-vous intéressé par des cours de coding en ligne?</h3>
+                    
+                        <div class="sessions-group">
+                    
+                            <input type="radio" name="session" id="offline" value="offline" placeholder="en présentielle" />
+                            <input type="radio" name="session" id="online" value="online" placeholder="Session en ligne" />
+                    
+                            <div class="session">
+                                <label for="offline">
+                                    <div class="radio offline" id="radio-1"></div>
+                                </label>
+                                <div class="desc">
+                                    <span>Non</span>
+                                </div>
                             </div>
+                    
+                            <div class="session">
+                                <label for="online">
+                                    <div class="radio online" id="radio-2"></div>
+                                </label>
+                                <div class="desc">
+                                    <span>Oui</span>
+                                </div>
+                            </div>
+                    
+                        </div>
+                    
+                        <span class="continue-btn">
+                            <span>Continuer</span>
+                            <i class="fa fa-arrow-right"></i>
+                        </span>
+                    </div>
+                    
+                    <div class="form-1">
+                        <div class="names-box">
+                            <input type="text" name="fname" id="fname" placeholder="Nom">
+                            <input type="text" name="lname" id="lname" placeholder="Prénoms">
+                        </div>
+                    
+                    
+                        <h3>Quel est votre sexe ?</h3>
+                    
+                        <div class="sessions-group">
+                    
+                            <input type="radio" name="sex" id="homme" value="M" placeholder="Homme" />
+                            <input type="radio" name="sex" id="femme" value="F" placeholder="Femme" />
+                    
+                            <div class="session">
+                                <label for="homme">
+                                    <div class="radio offline" id="sex-1"></div>
+                                </label>
+                                <div class="desc">
+                                    <span>Homme</span>
+                                </div>
+                            </div>
+                    
+                            <div class="session">
+                                <label for="femme">
+                                    <div class="radio online" id="sex-2"></div>
+                                </label>
+                                <div class="desc">
+                                    <span>Femme</span>
+                                </div>
+                            </div>
+                    
+                        </div>
+                    
+                        <span class="continue-btn">
+                            <span>Continuer</span>
+                            <i class="fa fa-arrow-right"></i>
+                        </span>
                     </div>
 
-                    <div class="session">
-                        <label for="online">
-                            <div class="radio online" id="radio-2"></div>
-                        </label>
-                            <div class="desc">
-                                <span>en ligne (de juin à août.)</span>
+                    <div class="form-1">                    
+                    
+                        <div class="input-box">
+                            <label for="bdate" class="text-white">Date de naissance</label>
+                            <input type="date" name="bdate" id="bdate" placeholder="Votre date de naissance " />
+                        </div>
+                    
+                        <div class="input-box">
+                            <select name="classe" id="classe" title="classes" class="select-group">
+                                <option value="">Choisir une classe</option>
+                                <option value="cm1">CM1</option>
+                                <option value="cm2">CM2</option>
+                                <option value="6eme">6ème</option>
+                                <option value="5eme">5ème</option>
+                                <option value="4eme">4ème</option>
+                                <option value="3eme">3ème</option>
+                                <option value="2nd et plus">2nd et Plus</option>
+                            </select>
+                        </div>
+                    
+                        <h3>Langue parlée</h3>
+                    
+                        <div class="sessions-group">
+                    
+                            <input type="radio" name="language" id="french" value="fr" placeholder="fr" />
+                            <input type="radio" name="language" id="english" value="en" placeholder="en" />
+                    
+                            <div class="session">
+                                <label for="french">
+                                    <div class="radio offline" id="lang-1"></div>
+                                </label>
+                                <div class="desc">
+                                    <span>Français</span>
+                                </div>
                             </div>
+                    
+                            <div class="session">
+                                <label for="english">
+                                    <div class="radio online" id="lang-2"></div>
+                                </label>
+                                <div class="desc">
+                                    <span>Anglais</span>
+                                </div>
+                            </div>
+                    
+                        </div>
+                    
+                        <span class="continue-btn">
+                            <span>Continuer</span>
+                            <i class="fa fa-arrow-right"></i>
+                        </span>
                     </div>
 
+                    <div class="form-1">                    
+                    
+                    
+                    
+                        <h3>Avez-vous un ordinateur portable ?</h3>
+                    
+                        <div class="sessions-group">
+                    
+                            <input type="radio" name="ordi" id="has_ordi" value="ordi" placeholder="fr" />
+                            <input type="radio" name="ordi" id="hasnt_ordi" value="sans ordi" placeholder="en" />
+                    
+                            <div class="session">
+                                <label for="has_ordi">
+                                    <div class="radio offline" id="ordi-1"></div>
+                                </label>
+                                <div class="desc">
+                                    <span>Oui</span>
+                                </div>
+                            </div>
+                    
+                            <div class="session">
+                                <label for="hasnt_ordi">
+                                    <div class="radio online" id="ordi-2"></div>
+                                </label>
+                                <div class="desc">
+                                    <span>Non</span>
+                                </div>
+                            </div>
+                    
+                        </div>
+
+                        <div class="input-box">
+                            <select name="formation" id="formation" title="formation" class="select-group">
+                                <option value="">Type de formation</option>
+                                <option value="offline">En présentielle</option>
+                                <option value="online">En ligne</option>
+                            </select>
+                        </div>
+
+                        <h3>Payement en </h3>
+                        <div class="sessions-group">
+                        
+                            <input type="radio" name="tranches" id="tranche-1" value="1" placeholder="fr" />
+                            <input type="radio" name="tranches" id="tranche-2" value="2" placeholder="en" />
+                        
+                            <div class="session">
+                                <label for="tranche-1">
+                                    <div class="radio offline" id="tr-1"></div>
+                                </label>
+                                <div class="desc">
+                                    <span>1 tranche</span>
+                                </div>
+                            </div>
+                        
+                            <div class="session">
+                                <label for="tranche-2">
+                                    <div class="radio online" id="tr-2"></div>
+                                </label>
+                                <div class="desc">
+                                    <span>2 tranches</span>
+                                </div>
+                            </div>
+                        
+                        </div>
+                    
+                        <span class="continue-btn">
+                            <span>Continuer</span>
+                            <i class="fa fa-arrow-right"></i>
+                        </span>
+                    </div>
+
+                    <div class="form-1">                    
+                    
+
+                        <div class="input-box">
+                            <input type="text" name="school" placeholder="Établissement fréquenté" id="school">
+                        </div>
+
+                        <h3>Vivez-vous à Yaoundé </h3>
+                        <div class="sessions-group">
+                        
+                            <input type="radio" name="yde" id="yde-1" value="oui" placeholder="fr" />
+                            <input type="radio" name="yde" id="yde-2" value="non" placeholder="en" />
+                        
+                            <div class="session">
+                                <label for="yde-1">
+                                    <div class="radio offline" id="yd-1"></div>
+                                </label>
+                                <div class="desc">
+                                    <span>oui</span>
+                                </div>
+                            </div>
+                        
+                            <div class="session">
+                                <label for="yde-2">
+                                    <div class="radio online" id="yd-2"></div>
+                                </label>
+                                <div class="desc">
+                                    <span>non</span>
+                                </div>
+                            </div>
+                        
+                        </div>
+                    
+                        <input type="submit" value="Envoyer" name="submit" class="submit-btn">
+                    </div>
                 </div>
 
-                <input type="submit" value="Envoyer" name="submit" class="submit-btn">
+                
+
+                
 
             </form>
 

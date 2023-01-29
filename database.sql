@@ -6,6 +6,15 @@ CREATE TABLE IF NOT EXISTS `students` (
     `email` VARCHAR(100) NOT NULL,
     `bdate` DATETIME NOT NULL,
     `session` VARCHAR(100) NOT NULL,
+    `phone` VARCHAR(100) NOT NULL,
+    `sex` VARCHAR(100) NOT NULL,
+    `class` VARCHAR(100) NOT NULL,
+    `language` VARCHAR(100) NOT NULL,
+    `ordinateur` VARCHAR(100) NOT NULL,
+    `tranches` VARCHAR(100) NOT NULL,
+    `formation_ype` VARCHAR(100) NOT NULL,
+    `etablissement` VARCHAR(100) NOT NULL,
+    `yaounde` VARCHAR(100) NOT NULL,
 
     PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;

@@ -30,7 +30,19 @@ var swiper = new Swiper(".hader-slider", {
 const form = document.querySelector(".form form"),
   submitBtn = form.querySelector(".submit-btn"),
   messages = document.querySelector(".form .messages"),
-  errorText = document.querySelector(".form .error-text");
+  errorText = document.querySelector(".form .error-text"),
+  continueBtns = document.querySelectorAll(".continue-btn"),
+  forms1 = document.querySelectorAll(".form-1");
+
+continueBtns.forEach((btn, id) => {
+  btn.onclick = (e) => {
+    e.preventDefault();
+    console.log(btn, `id = ${id}`);
+    forms1[id].style.display = "none";
+    // forms1[id + 1].style.display = "flex";
+    forms1[id + 1].style.left = 0;
+  };
+});
 
 form.onsubmit = (e) => {
   e.preventDefault();
