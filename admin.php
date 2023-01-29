@@ -33,6 +33,22 @@ $data = $statement->fetchAll(PDO::FETCH_ASSOC);
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <link href="css/style.css" rel="stylesheet">
+
+    <style>
+    td {
+        font-size: .8rem;
+        border: .1rem solid #777;
+    }
+
+    th {
+        font-size: .8rem;
+        border: .1rem solid #777;
+    }
+
+    .btn {
+        font-size: .7rem;
+    }
+    </style>
 </head>
 
 <body>
@@ -48,6 +64,15 @@ $data = $statement->fetchAll(PDO::FETCH_ASSOC);
                 <th scope="col">Date de Naissance</th>
                 <th scope="col">Addresse Email</th>
                 <th scope="col">Session</th>
+                <th scope="col">Telephone</th>
+                <th scope="col">Sexe</th>
+                <th scope="col">Class</th>
+                <th scope="col">Langue</th>
+                <th scope="col">A un ordinateur</th>
+                <th scope="col">Tranches</th>
+                <th scope="col">Type Formation</th>
+                <th scope="col">Établissement</th>
+                <th scope="col">Yaoundé</th>
                 <th scope="col">Actions</th>
             </tr>
         </thead>
@@ -62,6 +87,15 @@ $data = $statement->fetchAll(PDO::FETCH_ASSOC);
                     <td>' . $student["bdate"] . '</td>
                     <td>' . $student["email"] . '</td>
                     <td>' . $student["session"] . '</td>
+                    <td>' . $student["phone"] . '</td>
+                    <td>' . $student["sex"] . '</td>
+                    <td>' . $student["class"] . '</td>
+                    <td>' . $student["language"] . '</td>
+                    <td>' . $student["ordinateur"] . '</td>
+                    <td>' . $student["tranches"] . '</td>
+                    <td>' . $student["formation_ype"] . '</td>
+                    <td>' . $student["etablissement"] . '</td>
+                    <td>' . $student["yaounde"] . '</td>
                     <td>
                     <a href="edit.php?id=' . $student["id"] . '" class="btn btn-success">Edit</a>
                     <a href="admin.php?id=' . $student["id"] . '" class="btn btn-danger">Delete</a>

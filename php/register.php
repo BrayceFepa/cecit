@@ -55,5 +55,5 @@ if (isset($fname, $lname, $email, $bdate, $session, $tel, $sex, $class, $languag
         echo "$email n'est pas une addresse valide";
     }
 } else {
-    echo json_encode(['status' => 401, 'message' => 'Tous les champs sont obligatoires']);
+    echo 'Tous les champs sont obligatoires';
 }
