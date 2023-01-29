@@ -1,6 +1,6 @@
 <?php
 
-$dsn = "mysql:host=localhost; dbname=caysti_courses;";
+$dsn = "mysql:host=sql307.epizy.com; dbname=epiz_33419357_caysti_courses;";
 $user = "root";
 $password = "";
 
