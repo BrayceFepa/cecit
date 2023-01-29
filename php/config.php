@@ -1,8 +1,8 @@
 <?php
 
 $dsn = "mysql:host=sql307.epizy.com; dbname=epiz_33419357_caysti_courses;";
-$user = "root";
-$password = "";
+$user = "epiz_33419357";
+$password = "bXNiGZVnQNF947";
 
 try {
     $db = new PDO($dsn, $user, $password);
