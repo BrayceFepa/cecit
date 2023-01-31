@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CAYSTI COURSES</title>
+    <link rel="icon" href="images/LogoCAYSTI1.png">
+    <title>Caystitraining</title>
 
    
 
@@ -26,9 +27,28 @@
 <body>
 
     <!-- header section starts -->
-    <header class="header">
-        
-            <a href="http://caysticourses.great-site.net/login.php" class="logo"><img src="./images/LogoCAYSTI1.png" alt=""></a>
+    <header class="header" id="accueil">
+    
+            
+
+            <nav class="navbar navbar-expand-lg bg-white shadow-sm fixed-top p-0 px-5">
+                <div class="container-fluid">
+                    <a href="http://caysticourses.great-site.net/login.php" class="navbar-brand logo"><img src="./images/LogoCAYSTI1.png" alt=""></a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+                        aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                        <div class="navbar-nav ms-auto">
+                            <a class="nav-link active" aria-current="page" href="#accueil">Accueil</a>
+                            <a class="nav-link" href="#modules">Modules</a>
+                            <a class="nav-link" href="#programs">Programme</a>
+                            <a class="nav-link btn" href="#inscription">Inscription</a>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+
         
 
         <div class="header__content">
@@ -45,17 +65,94 @@
     <!-- main section starts -->
     <main class="main">
 
+        <section class="about programs" id="intro">
+        
+            <h2 class="heading">Et si on codait en français…</h2>
+        
+            <div class="about_timeline-container">
+        
+                <ul class="about__timeline">
+        
+        
+        
+                    <li class="timeline">
+                        <div class="timline-icon">
+                            <i class="fa fa-bell"></i>
+                        </div>
+                        <div class="timeline-content">
+                            <!-- <h3 class="timeline-title">Nos débuts</h3>
+                            <h4 class="timeline-subtitle">Décembre 2022</h4> -->
+                            <p class="timeline-txt">de nos jours l’anglais occupe la place de la langue internationale du digital ceci provoquant malheureusement un frein à
+                            l’apprentissage de la programmation pour ceux qui ont pour première langue le français ou alors leurs dialectes.</p>
+                        </div>
+                    </li>
+        
+        
+        
+                    <li class="timeline">
+                        <div class="timline-icon">
+                            <i class="fa-solid fa-triangle-exclamation"></i>
+                        </div>
+                        <div class="timeline-content">
+                            <!-- <h3 class="timeline-title">Notre vision</h3>
+                            <h4 class="timeline-subtitle">Innovation et proféssionalisme</h4> -->
+                            <p class="timeline-txt">L’Afrique, celle-là qui compte environ 80 pays dont 542 millions d’habitants et dont la plupart ont pour première langue
+                            le français, connait le plus fort taux de l’analphabétisme numérique dans tout le monde. Pourquoi ? Parce que les
+                            langues telles que l’anglais occupent en plein le monde du digital. Les enfants ayant pour langue officielle ou pour
+                            seconde langue le français ou les langues maternelles n’ont-ils donc pas la chance de pouvoir eux aussi coder ?</p>
+                        </div>
+                    </li>
+        
+        
+        
+                    <li class="timeline">
+                        <div class="timline-icon">
+                            <i class="fa-solid fa-lightbulb"></i>
+                        </div>
+                        <div class="timeline-content">
+                            <!-- <h3 class="timeline-title">Pourquoi nous choisir ?</h3>
+                            <h4 class="timeline-subtitle">Expertise et Fiabilité</h4> -->
+                            <p class="timeline-txt">Selon Mme Arielle KITIO, CEO de CAYSTI (Cameroon youth school tech incubator), « la première édition de CEL sera Coder
+                            en français (CEFr) dans l’objectif de positionner le français comme une langue leader de la production numérique dans le
+                            monde, de donner une facilité aux enfants francophones de pouvoir être éduqués dans le domaine des nouvelles
+                            technologies et de renfoncer la culture de créativité dans l’espace francophone. »</p>
+                        </div>
+                    </li>
+        
+        
+        
+                    
+        
+                </ul>
+        
+            </div>
+
+            <div class="programs-section about">
+            
+                <div class="formation">
+                    <ul class="modules text-center">
+                        <li>Tous les participants provenant du CECIT</li>
+                        <li>Durée de soumission : du 14 Août au 23 Août 2023</li>
+                        <li>Évaluation des projets : du 24 au 30 Août 2023</li>
+                        <li>Cérémonie de clôture : 2 Septembre 2023</li>
+                        
+                    </ul>
+                </div>
+            </div>
+        
+        </section>
+
         
         <!-- program starts -->
 
-        <section class="programs" id="intro">
+        <section class="programs"  id="modules">
 
             <div class="program-intro">
                 <div class="pic">
                     <img src="images/youngs.jpeg" alt="">
                 </div>
                 <div class="txt">
-                    <h2 class="heading">Bienvenue dans votre centre d’éveil technologique, de développement de la créativité et de promotion
+                    <h2 class="heading">Bienvenue dans votre centre d’éveil technologique, de développement <br> de la créativité et de promotion
                         de
                         l’entrepreneuriat des jeunes via le numérique.</h2>
                     <p class="desc">C’est avec un immense plaisir que nous vous annonçons le début de la formation de vos enfants qui aura
@@ -80,11 +177,11 @@
                     </ul>
                 </div>
 
-                <h2 class="heading">PROGRAMME</h2>
+                <h2 class="heading" id="programs">PROGRAMME</h2>
 
 
                 <div class="programs-container">
-                    <h3 class="title-program">CAMEROUN - YAOUNDE</h3>
+                    <h3 class="title-program">CAMEROUN</h3>
                     <ul class="program-wrapper">
                         <li class="program">
                             <div class="step">1</div>
@@ -110,16 +207,42 @@
                     </ul>
                 </div>
 
-                <div class="programs-container">
-                    <h3 class="title-program">LA DIASPORA</h3>
+                <div class="programs-container" >
+                    <h3 class="title-program">FORMATION EN LIGNE</h3>
                     <ul class="program-wrapper">
                         <li class="program">
-                            <div class="step">1</div>
-                            <span>Première vague : mois de juin</span>
-                            <span>Deuxieme vague : mois de juillet</span>
-                            <span>Troisieme vague : mois d'Aout </span>
-                            <span>Première Vague du 12 juin au 8 juillet 2023 </span>
-                            <span>Deuxieme Vague du 17 juillet au 12 Aout 2023 </span>
+                            <div class="step mb-3">1</div>
+                            <span class="fw-bold">Première vague : mois de juin</span>
+                            <button type="button" class="btn mt-5" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                                En savoir plus
+                            </button>
+                            
+                            <!-- Modal -->
+                            <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+                                aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-centered">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h1 class="modal-title fs-5" id="staticBackdropLabel">Formation en ligne</h1>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            1 mois reparti comme suit :
+                                            3 semaines de cours sur la plateforme <a href="https://mycaysti.com/">mycaysti.com</a>  
+                                            <ul class="p-5">
+                                                <li class="my-4 fw-bold">6 jours de cours en vidéoconférence</li>
+                                                <li class="my-4 fw-bold">1 semaine pour envoyer les resultats</li>
+                                                <li class="my-4 fw-bold">2 jours d'évaluations des différents projets et 1 jour pour les resultats</li>
+                                            </ul>
+                                            Deuxieme Vague du 17 juillet au 12 Aout 2023
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                            <button type="button" class="btn btn-primary">Understood</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                 
                         </li>
 
@@ -131,26 +254,7 @@
                     </ul>
                 </div>
                 
-                <div class="programs-container">
-                    <h3 class="title-program">formation en ligne</h3>
-                    <ul class="program-wrapper">
-
-                        <li class="program">
-                            <img src="images/enligne.jpg" alt="">
-                        </li>
-
-                        <li class="program">
-                            <div class="step">1</div>
-                            <span>1 mois reparti comme suit :</span>
-                            <span>3 semaines de cours sur la plateforme MyCaysti dont 6 jours de cours en vidéoconférence</span>
-                            <span>1 semaine pour envoyer les resultats  </span>
-                            <span>2 jours d'évaluations des différents projets et 1 jour pour les resultats </span>
-                            <span>Deuxieme Vague du 17 juillet au 12 Aout 2023 </span>
-                
-                        </li>
-                
-                    </ul>
-                </div>
+               
             </div>
 
         </section>
@@ -467,12 +571,16 @@
 
 
     <footer class="footer">
-        <p>CAYSTI 2023 - All Right Reserved</p>
+        <p>CAYSTI 2023 - All Rights Reserved</p>
     </footer>
 
 
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <!-- bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
     <script src="js/script.js"></script>
 </body>
 </html>
