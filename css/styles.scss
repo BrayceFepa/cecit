@@ -249,19 +249,19 @@ section {
           // );
           background-image: linear-gradient(360deg, $main-color, $secondary-color);
           list-style: none;
-          padding: 2rem 0.6rem;
+          padding: 2rem 1rem;
           border-radius: 0.5rem;
           cursor: pointer;
           display: flex;
           align-items: center;
           justify-content: center;
-          gap: 1rem;
-          font-size: 1.2rem;
+          gap: 1.5rem;
+          font-size: 1.3rem;
           // color: $black;
           // font-weight: bold;
 
           i {
-            font-size: 1.6rem;
+            font-size: 2rem;
           }
         }
       }
@@ -424,7 +424,7 @@ section {
     padding: 1rem;
     text-align: center;
     width: 40rem;
-    margin-bottom: 2rem;
+    margin-bottom: 4rem;
     display: none;
     transition: all 0.5s linear;
   }
@@ -459,6 +459,7 @@ section {
   .form-container {
     position: relative;
     width: 95vw;
+    margin-top: 2rem;
 
     .forms {
       width: 55%;
@@ -710,14 +711,23 @@ section {
 // form section ends
 
 .footer{
-  height: 20rem;
-  background: $main-color;
+  height: 15rem;
+  background-image: linear-gradient(35deg, rgb(207, 63, 2, 0.5), rgb(207, 63, 2, 0.5)), url(../images/bg-footer.png);
   width: 100vw;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 3rem;
+  flex-direction: column;
+  font-size: 2.5rem;
   color: $white;
+
+  span{
+    font-size: 1.5rem;
+    a{
+      color: $white;
+        text-decoration: none;
+    }
+  }
 }
 
 
@@ -803,7 +813,7 @@ section {
             //   $main-color,
             //   $secondary-color
             // );
-            background: $secondary-color;
+            // background: $secondary-color;
             list-style: none;
             padding: 2rem 0.6rem;
             border-radius: 0.5rem;
@@ -812,7 +822,7 @@ section {
             align-items: center;
             justify-content: center;
             gap: 1rem;
-            font-size: 1.2rem;
+            font-size: 1.3rem;
             margin-top: 2rem;
 
             i {
@@ -1123,12 +1133,17 @@ section {
     font-size: 40%;
   }
 
+    .navbar-toggler-icon{
+      height: 3rem;
+      width: 3rem;
+    }
+
     .header {
   
   
       .logo {
-        height: 7rem;
-        width: 7rem;
+        height: 8rem;
+        width: 8rem;
         // position: absolute;
         // z-index: 2;
         top: 2rem;
@@ -1170,6 +1185,13 @@ section {
           width: 100%;
         }
       }
+
+      .header__content{
+
+        h3{
+          font-size: 4rem;
+        }
+      }
     }
 
         .programs {
@@ -1198,14 +1220,14 @@ section {
     
               .modules {
                 display: flex;
-                justify-content: space-between;
+                justify-content: center;
                 align-items: center;
                 flex-wrap: wrap;
                 color: $white;
                 font-weight: 500;
     
                 li {
-                  flex-basis: 20rem;
+                  flex-basis: 25rem;
                   // background-image: linear-gradient(
                   //   120deg,
                   //   $main-color,
@@ -1251,7 +1273,7 @@ section {
                   gap: 1.5rem;
                   border: 0.1rem solid $secondary-color;
                   height: 35rem;
-                  width: 30rem;
+                  width: 35rem;
     
                   img {
                     width: 100%;
@@ -1321,6 +1343,22 @@ section {
                 width: 1rem;
                 height: 0.5rem;
                 z-index: -1;
+              }
+            }
+          }
+        }
+
+        .form {
+
+          .form-container{
+
+            .forms{
+
+              .form-1{
+
+                h3{
+                  font-size: 1.3rem;
+                }
               }
             }
           }

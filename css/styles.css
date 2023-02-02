@@ -204,17 +204,17 @@ section {
   flex-basis: 18%;
   background-image: linear-gradient(360deg, #cc3300, #eaad15);
   list-style: none;
-  padding: 2rem 0.6rem;
+  padding: 2rem 1rem;
   border-radius: 0.5rem;
   cursor: pointer;
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 1rem;
-  font-size: 1.2rem;
+  gap: 1.5rem;
+  font-size: 1.3rem;
 }
 .programs .programs-section .formation .modules li i {
-  font-size: 1.6rem;
+  font-size: 2rem;
 }
 .programs .programs-section .programs-container {
   margin-top: 5rem;
@@ -349,7 +349,7 @@ section {
   padding: 1rem;
   text-align: center;
   width: 40rem;
-  margin-bottom: 2rem;
+  margin-bottom: 4rem;
   display: none;
   transition: all 0.5s linear;
 }
@@ -359,6 +359,7 @@ section {
 .form .form-container {
   position: relative;
   width: 95vw;
+  margin-top: 2rem;
 }
 .form .form-container .forms {
   width: 55%;
@@ -568,14 +569,22 @@ section {
 }
 
 .footer {
-  height: 20rem;
-  background: #cc3300;
+  height: 15rem;
+  background-image: linear-gradient(35deg, rgba(207, 63, 2, 0.5), rgba(207, 63, 2, 0.5)), url(../images/bg-footer.png);
   width: 100vw;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 3rem;
+  flex-direction: column;
+  font-size: 2.5rem;
   color: #fff;
+}
+.footer span {
+  font-size: 1.5rem;
+}
+.footer span a {
+  color: #fff;
+  text-decoration: none;
 }
 
 @media (max-width: 1130px) {
@@ -641,7 +650,6 @@ section {
   }
   .programs .programs-section .formation .modules li {
     flex-basis: 20rem;
-    background: #eaad15;
     list-style: none;
     padding: 2rem 0.6rem;
     border-radius: 0.5rem;
@@ -650,7 +658,7 @@ section {
     align-items: center;
     justify-content: center;
     gap: 1rem;
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     margin-top: 2rem;
   }
   .programs .programs-section .formation .modules li i {
@@ -896,9 +904,13 @@ section {
   html {
     font-size: 40%;
   }
+  .navbar-toggler-icon {
+    height: 3rem;
+    width: 3rem;
+  }
   .header .logo {
-    height: 7rem;
-    width: 7rem;
+    height: 8rem;
+    width: 8rem;
     top: 2rem;
     left: 5rem;
     border-radius: 100%;
@@ -933,6 +945,9 @@ section {
     margin-left: 2rem;
     width: 100%;
   }
+  .header .header__content h3 {
+    font-size: 4rem;
+  }
   .programs .program-intro {
     display: flex;
     align-items: center;
@@ -953,14 +968,14 @@ section {
   }
   .programs .programs-section .formation .modules {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     flex-wrap: wrap;
     color: #fff;
     font-weight: 500;
   }
   .programs .programs-section .formation .modules li {
-    flex-basis: 20rem;
+    flex-basis: 25rem;
     background: #eaad15;
     list-style: none;
     padding: 2rem 0.6rem;
@@ -996,7 +1011,7 @@ section {
     gap: 1.5rem;
     border: 0.1rem solid #eaad15;
     height: 35rem;
-    width: 30rem;
+    width: 35rem;
   }
   .programs .programs-section .programs-container .program-wrapper .program img {
     width: 100%;
@@ -1055,5 +1070,8 @@ section {
     width: 1rem;
     height: 0.5rem;
     z-index: -1;
+  }
+  .form .form-container .forms .form-1 h3 {
+    font-size: 1.3rem;
   }
 }/*# sourceMappingURL=styles.css.map */
