@@ -356,7 +356,7 @@ section {
   padding: 1rem;
   text-align: center;
   width: 40rem;
-  margin-bottom: 4rem;
+  margin-bottom: 2rem;
   display: none;
   transition: all 0.5s linear;
 }
@@ -366,7 +366,7 @@ section {
 .form .form-container {
   position: relative;
   width: 95vw;
-  margin-top: 2rem;
+  margin-top: 1rem;
 }
 .form .form-container .forms {
   width: 55%;
