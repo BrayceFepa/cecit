@@ -1,31 +1,3 @@
-var swiper = new Swiper(".hader-slider", {
-  slidesPerView: 1,
-  spaceBetween: 10,
-  pagination: {
-    el: ".swiper-pagination",
-    clickable: true,
-  },
-  loop: true,
-  autoplay: {
-    delay: 4000,
-    disableOnInteraction: false,
-  },
-  breakpoints: {
-    0: {
-      slidesPerView: 1,
-      spaceBetween: 10,
-    },
-    768: {
-      slidesPerView: 1,
-      spaceBetween: 20,
-    },
-    1024: {
-      slidesPerView: 1,
-      spaceBetween: 30,
-    },
-  },
-});
-
 // form manipulations
 const form = document.querySelector(".form form"),
   submitBtn = form.querySelector(".submit-btn"),
@@ -38,10 +10,22 @@ const form = document.querySelector(".form form"),
 continueBtns.forEach((btn, id) => {
   btn.onclick = (e) => {
     e.preventDefault();
-    console.log(btn, `id = ${id}`);
-    forms1[id].style.display = "none";
-    forms1[id + 1].style.display = "flex";
-    forms1[id + 1].style.left = 0;
+
+    let radioInpt = forms1[id].querySelectorAll('input[type="radio"]');
+    let inputs = forms1[id].querySelectorAll(".inputs");
+    if ([...inputs].find((elt) => elt.value === "")) {
+      errorText.textContent = "Tous les champs sont obligatoires";
+      errorText.style.display = "block";
+    } else if ([...radioInpt].find((elt) => elt.checked)) {
+      errorText.style.display = "none";
+      console.log(btn, `id = ${id}`);
+      forms1[id].style.display = "none";
+      forms1[id + 1].style.display = "flex";
+      forms1[id + 1].style.left = 0;
+    } else {
+      errorText.textContent = "Tous les champs sont obligatoires";
+      errorText.style.display = "block";
+    }
   };
 });
 
